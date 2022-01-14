@@ -11,8 +11,6 @@ const CartItem = ({ item }) => {
 	const decrement = () => dispatch(decreaseCart({ id: item.id }));
 	const deleteCart = () => dispatch(removeFromCart({ id: item.id }));
 
-	console.log(item);
-
 	return (
 		<div className='item-card'>
 			<div className='cart-interact'>
@@ -27,12 +25,10 @@ const CartItem = ({ item }) => {
 				style={{ padding: '10px' }}
 			/>
 			<div className='item-details'>
-				<div className='item-name'>
-					Horlicks Health And Nutrition Drink Jar
-				</div>
-				<div className='item-price'>৳ 250 / 100gm </div>
+				<div className='item-name'>{item.title}</div>
+				<div className='item-price'>৳ {item.price} </div>
 			</div>
-			<div className='item-total'>৳ 22322</div>
+			<div className='item-total'>৳ {item.price * item.cartQuantity}</div>
 			<div onClick={deleteCart} className='item-clear'>
 				<i className='fas fa-times'></i>
 			</div>

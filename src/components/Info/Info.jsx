@@ -1,5 +1,6 @@
 import './Info.css';
 
+// why shodaimama component
 const Info = () => {
 	return (
 		<div className='why_shodaimama'>

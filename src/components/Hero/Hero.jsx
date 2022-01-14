@@ -7,9 +7,12 @@ import cover3 from '../../images/cover3.png';
 import cover4 from '../../images/cover4.png';
 import './Hero.css';
 
+// custom arrow button
 const NextArrow = (props) => (
 	<button {...props} className={`${props.className} custom-arrow`} />
 );
+
+// custom button
 const PrevArrow = (props) => (
 	<button
 		{...props}
@@ -17,6 +20,7 @@ const PrevArrow = (props) => (
 	/>
 );
 
+// slider settings
 const settings = {
 	dots: true,
 	infinite: true,
@@ -33,6 +37,7 @@ const settings = {
 const Hero = () => {
 	return (
 		<>
+			{/* topbar */}
 			<div className='homearea_category'>
 				<Link className='homearea_category-item active' to='#'>
 					Fresh
@@ -44,6 +49,8 @@ const Hero = () => {
 					PreOrder
 				</Link>
 			</div>
+
+			{/* main slider content */}
 			<div className='homearea_slider'>
 				<Slider {...settings}>
 					<div>

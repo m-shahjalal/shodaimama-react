@@ -11,8 +11,12 @@ import Sidebar from '../components/Sidebar/Sidebar';
 const HomeScreen = () => {
 	const products = useSelector((state) => state.products);
 	return (
+		// main application viewport
 		<main className='main'>
+			{/* left sidebar */}
 			<Sidebar />
+
+			{/* entire right section */}
 			<div className='homearea'>
 				<Hero />
 				<Alert />
@@ -22,15 +26,18 @@ const HomeScreen = () => {
 					) : products.isError ? (
 						<div>{products.errorMessage}</div>
 					) : (
+						// renders the card of products
 						products.products.map((item) => (
 							<Card item={item} key={item.id} />
 						))
 					)}
 				</div>
 				<Alert />
+				{/* bottom category section */}
 				<Category />
 				<Info />
 				<Footer />
+				{/* mobile menu section */}
 				<Menu />
 			</div>
 		</main>

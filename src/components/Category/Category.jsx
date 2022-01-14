@@ -13,11 +13,14 @@ import './Category.css';
 const Category = () => {
 	return (
 		<div className='bottom_category'>
+			{/* title */}
 			<div className='bottom_category-headline'>
 				<div className='bottom_category-headline_inner'>
 					Shodaimama Categories
 				</div>
 			</div>
+
+			{/* all the category and names */}
 			<div className='bottom_category-container'>
 				<div className='bottom_category-card'>
 					<img

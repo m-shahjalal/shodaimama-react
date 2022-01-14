@@ -9,17 +9,20 @@ const Header = () => {
 	);
 	return (
 		<header className='header'>
+			{/* hamburger icon */}
 			<div className='header_hamburger'>
 				<div className='hamburger-icon'>
 					<i className='fas fa-bars'></i>
 				</div>
 			</div>
+			{/* main logo */}
 			<div className='header_left'>
 				<Link to='/' className='header_left-logo'>
 					<img src={logo} alt='Logo' className='header-logo' />
 				</Link>
 			</div>
 
+			{/* right sections */}
 			<div className='header_right'>
 				<Link to='#' className='header_right-item'>
 					<i className='fas fa-search'></i>
@@ -32,6 +35,8 @@ const Header = () => {
 					<i className='fas fa-user'></i>
 					Sing in
 				</Link>
+
+				{/* header cart */}
 				<Link to='/cart' className='header_cart header_right-item'>
 					<i className='fas fa-cart-plus'></i>
 					<i className='fas fa-angle-double-right'></i>

@@ -1,5 +1,6 @@
 import './Menu.css';
 
+// bottom menu in small devises
 const Menu = () => {
 	return (
 		<div className='mobile_sidebar'>

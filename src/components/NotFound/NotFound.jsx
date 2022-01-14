@@ -1,6 +1,8 @@
 const NotFound = () => {
-    return (
-		<div className='d-flex justify-content-center align-items-center' id='main'>
+	return (
+		<div
+			className='d-flex justify-content-center align-items-center'
+			id='main'>
 			<h1 className='mr-3 pr-3 align-top border-right inline-block align-content-center'>
 				404
 			</h1>
@@ -11,6 +13,6 @@ const NotFound = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default NotFound
+export default NotFound;

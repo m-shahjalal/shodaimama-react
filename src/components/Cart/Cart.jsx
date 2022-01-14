@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { clearCart } from '../../redux/slices/cartSlice';
 import './Cart.css';
 import CartItem from './CartItem';
@@ -6,8 +7,11 @@ import CartItem from './CartItem';
 const Cart = () => {
 	const cart = useSelector((state) => state.cart);
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 	const clearCartItems = () => dispatch(clearCart());
+	const clickHandler = () => navigate('/');
 
+	// if card is empty then this will render
 	if (cart.cartItems.length === 0) {
 		return (
 			<div
@@ -16,7 +20,7 @@ const Cart = () => {
 				<div className='cart'>
 					<i className='fas fa-cart-arrow-down'></i>
 					<p className='not-found-title'>No Product Found</p>
-					<button className='not-found-button'>
+					<button onClick={clickHandler} className='not-found-button'>
 						Start Shopping New
 					</button>
 				</div>
@@ -24,6 +28,7 @@ const Cart = () => {
 		);
 	}
 
+	// if cart items is exists
 	return (
 		<div className='cart-container'>
 			<div className='cart-top'>
@@ -52,6 +57,8 @@ const Cart = () => {
 						Cash & Digital Payment Accepted.
 					</div>
 				</div>
+
+				{/* individual cart items */}
 				<div className='cart-right'>
 					{cart.cartItems.length &&
 						cart.cartItems.map((item) => (
@@ -60,6 +67,7 @@ const Cart = () => {
 				</div>
 			</div>
 
+			{/* bottom line of cart */}
 			<div className='cart-bottom'>
 				<div className='cart-bottom-items'>
 					<i className='fas fa-cart'></i>

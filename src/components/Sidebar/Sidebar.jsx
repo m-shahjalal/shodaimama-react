@@ -28,12 +28,7 @@ const Sidebar = () => {
 						Fresh
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
-						<img
-							className='sidebar-img'
-							src={regular}
-							alt=''
-							srcset=''
-						/>
+						<img className='sidebar-img' src={regular} alt='' />
 						Regular
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
@@ -55,7 +50,7 @@ const Sidebar = () => {
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={breakfast} alt='' />
-						Breakfast and Snacks
+						Breakfast &amp; Snacks
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={cook} alt='' />
@@ -63,11 +58,11 @@ const Sidebar = () => {
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={meat} alt='' />
-						Meat & fish
+						Meat &amp; fish
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={vegetable} alt='' />
-						Fruits & Vegetable
+						Fruits &amp; Vegetable
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={dairy} alt='' />
@@ -75,7 +70,7 @@ const Sidebar = () => {
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={can} alt='' />
-						Frozen & Canned
+						Frozen &amp; Canned
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={breakfast} alt='' />
@@ -91,7 +86,7 @@ const Sidebar = () => {
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={home} alt='' />
-						Home & kitchen
+						Home &amp; kitchen
 					</Link>
 					<Link to='#' className='sidebar_main-item'>
 						<img className='sidebar-img' src={hygiene} alt='' />

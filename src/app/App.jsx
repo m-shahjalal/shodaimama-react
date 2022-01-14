@@ -33,7 +33,7 @@ const App = () => {
 					<Route path='*' element={<Error />} />
 				</Routes>
 			</div>
-			<Toaster position='top-center' reverseOrder={true} />
+			<Toaster position='top-right' reverseOrder={true} />
 		</BrowserRouter>
 	);
 };

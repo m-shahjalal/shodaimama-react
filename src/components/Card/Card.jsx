@@ -28,14 +28,18 @@ const Card = ({ item }) => {
 				<img src={item.image} alt='' className='img-responsive' />
 			</div>
 			<div className='homearea_card-title'>{item.title}</div>
-			<div className='homearea_card-count'>each</div>
+
+			{/* each would be dynamic */}
+			<div className='homearea_card-count'>{'each'}</div>
 			<div className='homearea_card-price'>
 				৳ <span className='homearea_card-num'> {item.price} </span>
 			</div>
 			<div className='homearea_card-row'>
 				<div className='homearea_card-delivery'>
 					<i className='fas fa-truck'></i>
-					<span className='next-morning'>next morning</span>
+
+					{/* next morning would be dynamic */}
+					<span className='next-morning'>{'next morning'}</span>
 				</div>
 				<div className='homearea_card-delivery'>
 					<i className='fas fa-money-check-alt'></i>

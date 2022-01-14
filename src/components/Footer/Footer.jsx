@@ -6,6 +6,7 @@ const Footer = () => {
 	return (
 		<>
 			<div className='footer'>
+				{/* first column */}
 				<div className='footer_col'>
 					<img src={logo} width='110' alt='logo' />
 					<div className='footer_col-social'>
@@ -17,6 +18,8 @@ const Footer = () => {
 					<button className='footer_col-app'>shodaimama app</button>
 					<div className='footer_col-credit'>ShodaiMama © 2021</div>
 				</div>
+
+				{/* column */}
 				<div className='footer_col'>
 					<h3 className='footer_col_title'>Useful Links</h3>
 					<div className='footer_col-link'>
@@ -34,6 +37,8 @@ const Footer = () => {
 						</Link>
 					</div>
 				</div>
+
+				{/* column */}
 				<div className='footer_col'>
 					<h3 className='footer_col_title'>Helpful Links</h3>
 					<div className='footer_col-link'>
@@ -51,6 +56,8 @@ const Footer = () => {
 						</Link>
 					</div>
 				</div>
+
+				{/* column */}
 				<div className='footer_col'>
 					<h3 className='footer_col_title'>Helpful Links</h3>
 					<div className='footer_col-link'>
@@ -69,12 +76,16 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* payment gateways images */}
 			<img
 				src='https://shodaimama.com/static/media/SSLCommerz-Pay-With-logo-All-Size-05.b4efc4ca.png'
 				alt=''
 				width='100%'
 				className='payment-image1'
 			/>
+
+			{/* payment gateways small images */}
 			<img
 				src='https://shodaimama.com/static/media/SSLCommerz-Pay-With-logo-All-Size-04.2e69075d.png'
 				alt=''
